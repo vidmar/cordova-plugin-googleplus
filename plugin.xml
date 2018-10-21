@@ -29,10 +29,11 @@
   <!-- android -->
   <platform name="android">
 
-	<preference name="PLAY_SERVICES_VERSION" default="11.8.0"/>
+	<preference name="PLAY_SERVICES_VERSION" default="+"/>
     <framework src="com.google.android.gms:play-services-auth:$PLAY_SERVICES_VERSION" />
     <framework src="com.google.android.gms:play-services-identity:$PLAY_SERVICES_VERSION" />
-
+    <framework src="com.android.support:support-core-utils:27.+" />		
+	  
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="GooglePlus">
         <param name="android-package" value="nl.xservices.plugins.GooglePlus" />
